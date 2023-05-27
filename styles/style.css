@@ -1,0 +1,223 @@
+.header-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 50px;
+    background-color: #9cf1e4;
+}
+.header-navigation-dark {
+  background-color: #094137;
+  color: #f9f9f9;
+}
+.body-dark {
+  background-color: #041117;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.header-menu li {
+    list-style: none;
+}
+.header-menu li a {
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background: #7ac9f9;
+    color: #242020;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+.btn-dark {
+  background-color:#555d92
+}
+.hidden {
+    opacity: 0%;
+}
+.main {
+  margin-top: 50px;
+}
+.h2-dark {
+  color: #0f2d09;
+}
+.card {
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+}
+.card-dark {
+  background-color: #171616;
+  color:#302e54;
+}
+.card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+.card__top {
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+}
+.card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: 0.2s;
+  }
+  
+  
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  .price {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; 
+    padding: 10px;
+  }
+  .card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+    text-decoration: none;
+  }
+  .card__title-dark {
+    color: #7b7a7a;
+  }
+  .card__title:hover {
+    color: #ff6633;
+  }
+  .btn__card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #3fc01f;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: auto; 
+  }
+  
+  .btn__card__add:hover {
+    border: 1px solid #ff6633;
+    background-color: #ff6633;
+    color: #fff;
+  }
+  .btn__card__add-dark {
+    background-color:#481f22;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 30px; 
+    row-gap: 40px; 
+    margin: 0 auto;
+  }
+  .container__form {
+    position: absolute;
+    visibility: hidden;
+    transition: .3s;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(230, 225, 225, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 60px 15px;
+  }
+  .form-active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .form {
+    width: 100%;
+    max-width: 500px;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 5px 15px black;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    min-height: 230px;
+    resize: none;
+    color: #202020;
+    border: 2px solid #3ba51f;
+    border-radius: 5px;
+    outline: none;
+}
+.result {
+  width: 100%;
+  text-align: right;
+  margin-top: -30px;
+  padding-right: 10px;
+  color: #737373;
+}  
+.footer-navigation {
+    width: 100%;
+    height: 50px;
+    background-color: #b4a0f5;
+}
+.footer-dark {
+  background-color: #091738;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.footer-menu li {
+    list-style: none;
+}
+.footer-menu li a {
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
